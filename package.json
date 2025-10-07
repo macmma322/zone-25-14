@@ -33,9 +33,10 @@
     "zone-25-14": "file:"
   },
   "scripts": {
-    "dev": "concurrently -k -r -s first \"npm run dev-server\" \"npm run dev-client\"",
+    "dev": "concurrently -k -r -s first \"npm run dev --prefix zone-25-14-backend\" \"npm run dev --prefix zone-25-14-frontend\"",
+    "dev:trace": "npx cross-env NODE_OPTIONS=--trace-deprecation concurrently -k -r -s first \"npm run dev --prefix zone-25-14-backend\" \"npm run dev --prefix zone-25-14-frontend\"",
     "dev-server": "npm run dev --prefix zone-25-14-backend",
-    "dev-client": "npm run dev --prefix zone-25-14-frontend",
+    "dev-client": "npm run dev:trace --prefix zone-25-14-frontend",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
