@@ -7,7 +7,12 @@
       "Bash(find:*)",
       "Bash(python update_translations.py:*)",
       "Bash(iconv:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Bash(npm run dev:*)",
+      "Bash(psql:*)",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\16\\bin\\psql.exe\" -U postgres -d the_zone_core -f \"f:/zone-25-14/zone-25-14-database/migrations/add_hr_warehouse_marketing_roles.sql\")"
     ],
     "deny": [],
     "ask": []
